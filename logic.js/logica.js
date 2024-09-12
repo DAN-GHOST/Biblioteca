@@ -25,4 +25,6 @@ function ShowBook(){
     });
 }
 
-window.onload = addBookToLibrary(); 
+const btnNewBook = document.querySelector(".btnAddBook");
+btnNewBook.addEventListener("click",()=>{addBookToLibrary()});
+//window.onload = addBookToLibrary(); 
