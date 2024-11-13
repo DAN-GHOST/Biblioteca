@@ -25,6 +25,33 @@ function ShowBook(){
     });
 }
 
+/*Funciones en desarrollo*/
+function generarDiv(){
+    const divContenedor = document.querySelector('.Contenedor_viewCradsBooks');
+    myLibrary.forEach((book, index) =>{
+        const newDiv = document.createElement('div');
+        newDiv.className = `div-${index}`;
+        divContenedor.appendChild(newDiv);
+        const infoInToDiv = document.querySelector(`.div-${index}`);
+    });
+}
+
+function limpiarDiv(){
+    let evaluar = false,
+    i = 0;
+    while(evaluar === false){
+        const divCambiante = document.querySelector(`.divs-${i}`);
+        if(divCambiante === null){
+            evaluar = true;
+        }else{
+            ++i;
+            divCambiante.remove();
+        }
+    }
+}
+/*-------------------------*/
+
 const btnNewBook = document.querySelector(".btnAddBook");
 btnNewBook.addEventListener("click",()=>{addBookToLibrary()});
-//window.onload = addBookToLibrary(); 
+//window.onload = addBookToLibrary();
+//window.onload = generarDiv();

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stiles.css/estilos.css">
+    <link rel="stylesheet" href="./stiles.css/viewCartBoocks.css">
     <title>Biblioteca</title>
 </head>
 <body>
@@ -11,16 +12,32 @@
         <div class="Contenedor_Nombre_Biblioteca">
             <p class = "Contenedor_txtNombreBiblioteca">BIBLIOTECA</p>
         </div>
-        <div class="Contenedor_principal_btnAgregarLibro_y_viewCradsBooks">
-            <div class="Contenedor_btnAgregarLibro">
-                <button class="btnAddBook">Agregar</button>
-            </div>
+        <div class="Contenedor_btnAgregarLibro">
+            <button class="btnAddBook">Agregar</button>
+        </div>
+        <div class="Contenedor_principal_viewCradsBooks">
             <div class="Contenedor_viewCradsBooks">
+                <div class="div-0">
+                    <div class="Contenedor_title">
+                        <p class="title">La batalla cultural</p>
+                    </div>
+                    <div class="Contenedor_author">
+                        <p class="author">Agustin laje</p>
+                    </div>
+                    <div class="Contenedor_pages">
+                        <p class="pages">500</p>
+                    </div>
+                    <div class="Contenedor_read">
+                        <p class="read">true</p>
+                    </div>
+                    <div class="Contenedor_btnDeleteBook">
+                        <button class="btnDeleteBook">Elimar libro</button>
+                    </div>
+                </div>
             <!--
                 Este div o contenedor va acontener las tarjetas que van a presentar la información de los libros. Dichas tarjetas deben generarse de forma automatica, con base a la cantidad de libros resgistrado o creados. Para este contenedor el diseño debe realizarce con css grid.
             -->
             </div>
-
         </div>
     </div>
     <script src="./logic.js/logica.js"></script>
